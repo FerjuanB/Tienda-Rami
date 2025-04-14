@@ -4,9 +4,10 @@ import { Roboto } from "next/font/google"
 import "./globals.css"
 
 const roboto = Roboto({
-  weight: ['200', '700'],
+  weight: ['400', '700'],
   subsets: ['latin'],
   display: 'swap',
+  variable: '--font-roboto',
 })
 
 export const metadata: Metadata = {
@@ -21,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={`${roboto.variable} ${roboto.className}`}>
         <header className="bg-gradient-to-r from-purple-600 to-blue-200 text-white py-4">
           <div className="container mx-auto px-4">
             <h1 className="text-2xl font-bold">RAMI GONZALEZ</h1>
