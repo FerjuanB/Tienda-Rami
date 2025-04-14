@@ -1,6 +1,8 @@
 import ProductGrid from "@/components/product-grid"
 import { getProducts } from "@/lib/google-sheets"
 
+export const revalidate = 21600 // revalidate every 6 hours
+
 export default async function Home() {
   const products = await getProducts()
 

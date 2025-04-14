@@ -31,7 +31,9 @@ export default function RootLayout({
         {children}
         <footer className="bg-gray-100 py-6 mt-12">
           <div className="container mx-auto px-4 text-center text-gray-600">
-            <p>© {new Date().getFullYear()} Tech Gifts Showcase</p>
+            <p>© {new Date().getFullYear()} Hecho por <a href="https://github.com/FerjuanB" className="text-blue-500 hover:text-blue-600">Fer Batres</a></p>
+            <p className="text-xs text-gray-300">Última actualización: {new Date().toLocaleString()}</p>
+
           </div>
         </footer>
       </body>
