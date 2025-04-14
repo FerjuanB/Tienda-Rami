@@ -1,9 +1,13 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Roboto } from "next/font/google"
 import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"] })
+const roboto = Roboto({
+  weight: ['200', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: "Tech Gifts Showcase",
@@ -17,10 +21,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <header className="bg-gradient-to-r from-purple-600 to-blue-500 text-white py-4">
+      <body className={roboto.className}>
+        <header className="bg-gradient-to-r from-purple-600 to-blue-200 text-white py-4">
           <div className="container mx-auto px-4">
-            <h1 className="text-2xl font-bold">Tech Gifts</h1>
+            <h1 className="text-2xl font-bold">RAMI GONZALEZ</h1>
           </div>
         </header>
         {children}

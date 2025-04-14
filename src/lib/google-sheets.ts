@@ -52,7 +52,7 @@ export async function getProducts(): Promise<Product[]> {
       .map((row) => ({
         id: row[articuloIndex],
         name: row[detalleIndex],
-        price: Number(row[precioIndex].replace(/[^\d.-]/g, "")), // Convert to number without parsing as float
+        price: row[precioIndex], // Convert to number without parsing as float
         // Ensure image URL is valid and accessible
         image: row[imagenIndex] ? 
           row[imagenIndex].trim().startsWith('http') ? row[imagenIndex].trim() : `https://${row[imagenIndex].trim()}`
