@@ -2,7 +2,14 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['elevenregalos.com.ar'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'elevenregalos.com.ar',
+        port: '',
+        pathname: '/elevenWeb/app/fotos/**',
+      },
+    ],
   },
 };
 

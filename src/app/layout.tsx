@@ -22,18 +22,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${roboto.variable} ${roboto.className}`}>
-        <header className="bg-gradient-to-r from-purple-600 to-blue-200 text-white py-4">
-          <div className="container mx-auto px-4">
-            <h1 className="text-2xl font-bold">RAMI GONZALEZ</h1>
+      <body className={`${roboto.variable} ${roboto.className} bg-secondary-light`}>
+        <header className="bg-gradient-to-r from-primary-dark to-primary-light text-white py-4 shadow-lg">
+          <div className="container mx-auto px-4 flex justify-between items-center">
+            <img src="/logo.png" alt="Logo" className="w-24 h-24 rounded-lg" />
+            
+            <span className="text-3xl font-semibold text-gray-200 uppercase">Tienda de regalos</span>
           </div>
         </header>
         {children}
-        <footer className="bg-gray-100 py-6 mt-12">
-          <div className="container mx-auto px-4 text-center text-gray-600">
-            <p>© {new Date().getFullYear()} Hecho por <a href="https://github.com/FerjuanB" className="text-blue-500 hover:text-blue-600">Fer Batres</a></p>
-            <p className="text-xs text-gray-300">Última actualización: {new Date().toLocaleString()}</p>
-
+        <footer className="bg-primary-dark text-white py-6 mt-12">
+          <div className="container mx-auto px-4 text-center">
+            <p>© {new Date().getFullYear()} Hecho por <a href="https://github.com/FerjuanB" className="text-accent-yellow hover:text-accent-orange transition-colors">Fer Batres</a></p>
+            <p className="text-sm opacity-75 mt-2">Última actualización: {new Date().toLocaleString('es-AR', { timeZone: 'America/Argentina/Buenos_Aires' })}</p>
           </div>
         </footer>
       </body>

@@ -9,7 +9,7 @@ export default async function Home() {
   return (
     <main className="container mx-auto bg-gray-500 px-4 py-8">
       
-      <h1 className="text-3xl font-semibold text-gray-200 bg-gradient-to-r from-blue-200 to-purple-600 text-center max-w-2xl mx-auto mb-8 uppercase py-2 rounded-lg">Tienda de regalos</h1>
+      
       {products.length > 0 ? (
         <ProductGrid products={products} />
       ) : (
