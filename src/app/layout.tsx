@@ -35,7 +35,6 @@ export default function RootLayout({
           <div className="container mx-auto px-4 text-center">
             <p>© {new Date().getFullYear()} Hecho por <a href="https://github.com/FerjuanB" className="text-accent-yellow hover:text-accent-orange transition-colors">Fer Batres</a></p>
             <p className="text-sm opacity-75 mt-2">Última actualización: {new Date().toLocaleString('es-AR', { timeZone: 'America/Argentina/Buenos_Aires', hour12: false })}</p>
-            <p className="text-sm opacity-75 mt-2">Última actualización: {new Date().toLocaleString('es-AR', { timeZone: 'America/Argentina/Buenos_Aires' })}</p>
           </div>
         </footer>
       </body>
